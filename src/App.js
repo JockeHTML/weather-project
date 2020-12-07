@@ -49,7 +49,7 @@ function App() {
 
     if (event.key === "Enter") {
       var weatherData;
-      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${API_KEY}&units=metric`)
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${API_KEY}&units=metric`)
       .then((res) => {
         if (res.ok) {
           return res.json();

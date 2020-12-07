@@ -14,7 +14,7 @@ function Weather({weather, Day, Date, Month}) {
         
       <div className="left-info-box">
         <div className="image-div">
-          <img className="icon" src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={weather.weather[0].description}/>
+          <img className="icon" src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={weather.weather[0].description}/>
         </div>
         <div className="temp-div">
           <h1>{Math.round(weather.main.temp)}°</h1>
