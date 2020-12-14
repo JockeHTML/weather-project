@@ -5,18 +5,16 @@ body {
   margin: 0px;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* main */
-.main-container {
-  font-family: "montseratt", sans-serif;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
     url("./images/main-bg.jpg");
-  background-size: cover;
+  background-size: auto;
+  background-repeat: no-repeat;
   background-position: center;
   margin: 0;
   padding: 0;
 }
+
+/* main */
 
 .main-container {
   height: 100vh;
@@ -258,7 +256,7 @@ input:focus {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
   .single-box {
     height: 120px;
     width: 110px;
@@ -309,7 +307,7 @@ input:focus {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 768px) {
   .city-title {
     padding: 0;
     margin: 0;
@@ -321,7 +319,7 @@ input:focus {
   }
   .bottom-container {
     margin: 1rem 0 0 0;
-    padding: 0;
+    padding: 0 2.5rem;
   }
   .single-box span {
     font-size: 18px;
@@ -353,7 +351,7 @@ input:focus {
     font-size: 1.3rem;
   }
   .right-container {
-    width: 70%;
+    width: 90%;
     margin: 5px;
     height: 165px;
     margin-bottom: 1rem;
