@@ -5,8 +5,10 @@ import WeatherBoxes from './components/WeatherBoxes';
 
 function App() {
 
+  /* API key imported from gitignore file */
   const API_KEY = process.env.REACT_APP_DEFAULT_API;
 
+  /* Different states made with useState hook */
   const [ query, setQuery ] = useState("");
   const [ weather, setWeather ] = useState({});
   const [ defaultHeading, setDefaultHeading ] = useState("Find Your Weather");
@@ -17,6 +19,7 @@ function App() {
 
   function submitCityName (event) {
 
+    /* Date code for forecase */
     var d = new Date();
     var weekday = new Array(7);
     weekday[0] = "Sunday"
@@ -47,6 +50,7 @@ function App() {
     setThisDate(s);
     setThisMonth(m);
 
+    /* API calls for forecast and weather */
     if (event.key === "Enter") {
       var weatherData;
       fetch(`https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${API_KEY}&units=metric`)
@@ -81,6 +85,7 @@ function App() {
     }
   }
 
+  /* handle search query */
   function handleCityName (event) {
     setQuery(event.target.value)
   }

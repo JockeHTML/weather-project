@@ -11,7 +11,6 @@ function Weather({weather, Day, Date, Month}) {
           <h2>{Day} {Date} {Month}</h2>
         </div>
         
-        
       <div className="left-info-box">
         <div className="image-div">
           <img className="icon" src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt={weather.weather[0].description}/>
