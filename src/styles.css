@@ -12,14 +12,6 @@ body {
   background-position: center;
 }
 
-/* main */
-
-.main-container {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-
 /* search */
 .search {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px 0;
